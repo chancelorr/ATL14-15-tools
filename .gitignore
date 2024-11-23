@@ -15,6 +15,10 @@ figs/*
 config/*
 !config/config_template.ini
 
+# build
+dist/
+*.egg-info
+
 # ignore misc
 misc/
 
