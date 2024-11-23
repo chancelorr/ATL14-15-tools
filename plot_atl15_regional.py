@@ -27,8 +27,7 @@ import rioxarray as rx
 
 #For geometries
 import shapely
-from shapely import box, LineString, MultiLineString, Point, Polygon, LinearRing
-from shapely.geometry.polygon import orient
+from shapely import box, Polygon
 
 #For REMA
 from rasterio import plot
@@ -37,46 +36,15 @@ from rasterio.features import rasterize
 
 #Datetime
 from datetime import datetime
-from datetime import timedelta
-from datetime import timezone
-from dateutil.relativedelta import relativedelta
 import time
 
 #For plotting, ticking, and line collection
 from matplotlib import cm 
-import matplotlib
-import matplotlib.ticker as ticker
 import matplotlib.pylab as plt
-import matplotlib.gridspec as gridspec
-from matplotlib.collections import LineCollection
 import matplotlib.colors as mcolors
-from matplotlib.colors import LightSource, LinearSegmentedColormap
-from matplotlib.lines import Line2D
-import matplotlib.patheffects as path_effects
 import cmcrameri.cm as cmc
-import contextily as cx
-import earthpy.spatial as es
 # for legend
 from matplotlib.patches import Rectangle
-from matplotlib.legend_handler import HandlerTuple
-
-#Personal and application specific utilities
-from utils.nsidc import download_is2
-#from utils.S2 import plotS2cloudfree, add_inset, convert_time_to_string
-from utils.utilities import is2dt2str
-import pyTMD
-
-#For error handling
-import shutil
-import traceback
-
-#For raster
-from rasterio.transform import from_origin
-
-# not in use 
-from ipyleaflet import Map, basemaps, Polyline, GeoData, LayersControl
-from rasterio import warp
-from rasterio.crs import CRS
 
 
 ### Setup from config

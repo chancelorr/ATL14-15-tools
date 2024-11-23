@@ -1,23 +1,42 @@
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+*.swp
+*.bak
+*.log
+*.tmp
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
 # ignore data
 data/
 processed_data/
 
-# ignore shapes content
+# ignore shapes except the scripps_antarctic polgygons and one test region
 shapes/*
 !shapes/scripps_antarctic_polygons_CR.*
+!shapes/Cp-D_test.*
 
 # ignore plots
 plots/
-figs/*
-!figs/.gitkeep
+figs/
 
 # ignore configs that arent the template
 config/*
 !config/config_template.ini
 
 # build
+ATL11_tools.egg-info/
 dist/
-*.egg-info
 
 # ignore misc
 misc/
